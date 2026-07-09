@@ -7,6 +7,9 @@
       name="description"
       content="Starsunder Studio creates immersive games and digital experiences, including the acclaimed Starsunder adventure."
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="starsunder-logo-500.png">
+    <link rel="apple-touch-icon" href="starsunder-logo-500.png">
     <title>Starsunder Studio</title>
     <style>
       :root {
@@ -160,6 +163,12 @@
         margin-top: 24px;
         color: var(--muted);
         text-align: center;
+        border-top: 1px solid rgba(0, 217, 255, 0.1);
+        padding: 40px 0;
+      }
+
+      footer p {
+          margin-bottom: 20px;
       }
 
       @media (max-width: 860px) {
@@ -172,6 +181,33 @@
           padding: 24px;
         }
       }
+
+      
+      .social-links {
+          display: flex;
+          gap: 30px;
+          justify-content: center;
+          flex-wrap: wrap;
+      }
+
+      .social-icon {
+          color: var(--primary-color);
+          text-decoration: none;
+          transition: all 0.3s ease;
+          font-size: 44px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 56px;
+          min-height: 56px;
+      }
+
+      .social-icon:hover {
+          color: var(--secondary-color);
+          transform: scale(1.1);
+          text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+      }
+
     </style>
   </head>
   <body>
@@ -235,6 +271,11 @@
 
       <footer>
         <p>Starsunder Studio — developing original games with heart and vision.</p>
+        <div class="social-links">
+            <a href="https://x.com/starsunder_game" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Starsunder on X">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
       </footer>
     </div>
   </body>
